@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: django-clearsessions
 spec:
-  schedule: "0 0 */5 * *"
+  schedule: "0 0 */1 * *"
   startingDeadlineSeconds: 20
   jobTemplate:
     spec:
