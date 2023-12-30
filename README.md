@@ -85,13 +85,25 @@ kubectl apply -f ConfigMap.yaml
 kubectl apply -f deployment.yaml
 ```
 
-Приложение работает на порту 30036. Чтобы узнать его ip выполните:
+Примените манифест Ingress к Minikube кластеру:
+
+```
+kubectl apply -f ingress.yaml
+```
+
+Узнайте IP адрес виртуальной машины:
 
 ```
 minikube ip
 ```
 
-Теперь приложение должно быть доступно по адресу you-ip:30036 в вашем веб-браузере.
+Добавьте в файл /etc/hosts строку:
+
+```
+<minikube-ip>  my-host.test
+```
+
+Теперь приложение будет доступно по адресу http://my-host.test в вашем веб-браузере.
 
 ## Переменные окружения
 
