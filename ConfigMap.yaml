@@ -5,7 +5,7 @@ metadata:
   labels:
     app: django
 data:
-  SECRET_KEY: "empty"
-  DATABASE_URL: "postgres://test_k8s:OwOtBep9Frut@172.20.10.2:5432/test_k8s"
-  ALLOWED_HOSTS: "*"
+  SECRET_KEY: ""
+  DATABASE_URL: ""
+  ALLOWED_HOSTS: ""
   DEBUG: "False"
