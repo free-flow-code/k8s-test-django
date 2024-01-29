@@ -5,7 +5,4 @@ metadata:
   labels:
     app: django
 data:
-  SECRET_KEY: ""
-  DATABASE_URL: ""
-  ALLOWED_HOSTS: ""
   DEBUG: "False"
